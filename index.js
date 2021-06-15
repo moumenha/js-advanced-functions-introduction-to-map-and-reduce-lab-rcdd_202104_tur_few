@@ -25,9 +25,9 @@ return myTotal;
 function reduceToAllTrue(sourceArray){
   const reducer = function reduce(acc, curr) {
     if (acc === true && curr === true){
-    return true;
-  } else {
     return false;
+  } else {
+    return true;
   }
 
 }

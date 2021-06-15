@@ -38,7 +38,7 @@ function reduceToAnyTrue(sourceArray){
     if (acc === true){
     return true;
   } else {
-    return curr;
+    return !!curr;
   }
       return sourceArray.reduce(reducer, false);
 

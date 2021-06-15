@@ -33,7 +33,7 @@ function reduceToAllTrue(sourceArray){
 
 }
 }
-function reduceToAllTrue(sourceArray){
+function reduceToAnyTrue(sourceArray){
   const truethy = function reduce(acc, curr) {
     if (acc === true){
     return true;

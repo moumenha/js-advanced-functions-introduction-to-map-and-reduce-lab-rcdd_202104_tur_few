@@ -31,7 +31,7 @@ function reduceToAllTrue(sourceArray){
   }
 
 }
-      return sourceArray.reduce(reducer, false);
+      return sourceArray.reduce(reducer, true);
 
 }
 

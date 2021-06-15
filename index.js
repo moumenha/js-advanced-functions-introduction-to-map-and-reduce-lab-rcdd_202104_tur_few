@@ -33,15 +33,27 @@ function reduceToAllTrue(sourceArray){
 
 }
 }
-function reduceToAnyTrue(sourceArray){
+function reduceToAllTrue(sourceArray){
   const truethy = function reduce(acc, curr) {
     if (acc === true){
     return true;
   } else {
-    return !!curr;
+    return curr;
   }
       return sourceArray.reduce(reducer, false);
 
 }
 }
+
+function reduceToAnyTrue(sourceArray){
+    const reducer = function(accumulator, currentValue){  
+        if(accumulator == true){
+            return true
+        } else {
+            return !!currentValue
+        } 
+    }
+    return sourceArray.reduce(reducer, false)
+} 
+
 

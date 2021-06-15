@@ -24,14 +24,15 @@ return myTotal;
 
 function reduceToAllTrue(sourceArray){
   const truethy = function reduce(acc, curr) {
-    if (!!acc === true && !!curr === true){
+    if (acc === true && curr === true){
     return true;
   } else {
     return false;
   }
-      return sourceArray.reduce(reducer, false);
 
 }
+      return sourceArray.reduce(reducer, false);
+
 }
 
 function reduceToAnyTrue(sourceArray){

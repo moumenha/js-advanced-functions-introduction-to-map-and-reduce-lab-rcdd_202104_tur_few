@@ -23,7 +23,7 @@ return myTotal;
 }
 
 function reduceToAllTrue(sourceArray){
-  const truethy = function reduce(acc, curr) {
+  const reducer = function reduce(acc, curr) {
     if (acc === true && curr === true){
     return true;
   } else {
